@@ -1,1 +1,59 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aldrin Papa</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="preloader">
+        <div class="container d-flex vh-100">
+            <div class="align-items-center row mx-auto">
+                <div class="spinner-border text-primary" role="status">
+                    <span class="sr-only">Loading...</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="wrapper">
+        
+        <section class="lazyload" id="home" style="background: url(https://papanipapi.sirv.com/Images/background.jpg); background-size: cover;">
+            <div class="container d-flex vh-100">
+                <div class="align-items-center row">
+                    <div class="caption">
+                        <h1>Hi! I'm Aldrin.</h1>
+                        <h2>Full Stack Developer</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $('body').addClass('overflow-hidden');
+        });
+
+        $(window).load(function() {
+            $('.preloader').fadeOut('slow', () => {
+                $('body').removeClass('overflow-hidden');
+            });
+        });
+    </script>
+</body>
+</html>
