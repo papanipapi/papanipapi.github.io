@@ -15,6 +15,6 @@
     "gulp-sass": "^4.0.2",
     "jquery": "^3.4.1",
     "jquery-lazyload": "^1.9.7",
-    "node-sass": "^4.12.0"
+    "node-sass": "^4.13.1"
   }
 }
